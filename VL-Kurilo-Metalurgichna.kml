@@ -3,42 +3,24 @@
 <Document>
 	<name>VL Kurilo - Metalurgichna</name>
 	<open>1</open>
-	<Style id="normalState">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/red-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<ListStyle>
-		</ListStyle>
-		<PolyStyle>
+	<Style id="ls20">
+		<LineStyle>
 			<color>ff0000ff</color>
-			<fill>0</fill>
-		</PolyStyle>
+			<width>2.5</width>
+		</LineStyle>
 	</Style>
 	<Style id="highlightState">
 		<IconStyle>
-			<scale>1.3</scale>
+			<color>ff0000ff</color>
+			<scale>1.4</scale>
 			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/red-pushpin.png</href>
+				<href>http://maps.google.com/mapfiles/kml/shapes/picnic.png</href>
 			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
 		<ListStyle>
 		</ListStyle>
 	</Style>
-	<StyleMap id="ls2">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#ls21</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#ls20</styleUrl>
-		</Pair>
-	</StyleMap>
 	<StyleMap id="examplePolyStyle">
 		<Pair>
 			<key>normal</key>
@@ -49,11 +31,31 @@
 			<styleUrl>#highlightState</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="ls20">
-		<LineStyle>
+	<StyleMap id="ls2">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#ls21</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#ls20</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="normalState">
+		<IconStyle>
 			<color>ff0000ff</color>
-			<width>2.5</width>
-		</LineStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/picnic.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+		<PolyStyle>
+			<color>ff0000ff</color>
+			<fill>0</fill>
+		</PolyStyle>
 	</Style>
 	<Style id="ls21">
 		<LineStyle>
